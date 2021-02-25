@@ -2,13 +2,13 @@ import React from 'react'
 import {Nav, NavbarContainer, NavLogo, MobileIcon, Menu, MenuItems, MenuLinks, NavContact, ContactLinks } from './navElements'
 import {FaBars} from 'react-icons/fa'
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
         <>
         <Nav>
-            <NavbarContainer>
+            <NavbarContainer >
                 <NavLogo to="/">logo</NavLogo>
-                <MobileIcon>
+                <MobileIcon onClick={toggle}> 
                     <FaBars/>
                 </MobileIcon>
                 <Menu>
@@ -34,4 +34,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar;

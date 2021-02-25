@@ -1,6 +1,6 @@
 
 import './App.css';
-import Navbar from './components/Navbar';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,17 +8,17 @@ import {
   Link
 } from "react-router-dom";
 
+import Home from './pages';
+
 
 function App() {
+
+
   return (
     <Router>
-      <Navbar/>
-
+    <Home/>
     </Router>
  
-
-  
-  
   );
 }
 
