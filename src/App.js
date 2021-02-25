@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 
 import Home from './pages';
+import Hero from './components/Hero';
 
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
 
   return (
     <Router>
-    <Home/>
+      <Home/>
+      <Hero/>
     </Router>
  
   );
